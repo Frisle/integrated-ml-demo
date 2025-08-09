@@ -3,6 +3,7 @@ services:
   iris:
     build:
       context: ./iris
+      dockerfile: Dockerfile
       args:
         - IRIS_PASSWORD=${IRIS_PASSWORD:-SYS}
     volumes:
